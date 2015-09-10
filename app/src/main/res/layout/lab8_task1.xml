@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+          <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:text="U"
+                  android:layout_weight="1"
+                  android:id="@+id/button1" />
+
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:text="D"
+                  android:layout_weight="1"
+                  android:id="@+id/button2" />
+
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:text="L"
+                  android:layout_weight="1"
+                  android:id="@+id/button3" />
+          </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/imageView"
+                android:background="#ffc8d5ff" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="R"
+                android:layout_weight="1"
+                android:id="@+id/button4" />
+
+        </LinearLayout>
+
+
+
+
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/editText"
+            android:hint="UserName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Log In"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:id="@+id/button5" />
+    </LinearLayout>
+</LinearLayout>
